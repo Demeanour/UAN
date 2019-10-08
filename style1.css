@@ -1,0 +1,409 @@
+@charset "utf-8";
+
+
+/*
+   Students: 219007945 T O Mogorosi, 206064284 AF Nyalela, 219006176 P Gailele 
+
+*/
+@font-face {
+font-family:  Arvo-BoldItalic;
+src:url(fonts/Arvo-Bold.ttf) format('truetype');
+}
+
+@font-face{
+font-family:Allan-Bold;
+src:url(fonts/Allan-Bold.ttf) format('truetype');
+}
+@font-face{
+font-family:Allan-Regular;
+src:url(fonts/Allan-Regular.ttf) format('truetype');
+}
+@font-face{
+font-family:AmaticSC-bold;
+src:url(fonts/AmaticSC-bold.ttf) format('truetype');
+}
+@font-face{
+font-family:Amatic-Regular;
+src:url(fonts/Amatic-Regular.ttf) format('truetype');
+}
+@font-face{
+font-family:Anton-Regular;
+src:url(fonts/Anton-Regular.ttf) format('truetype');
+}
+@font-face{
+font-family:Arvo-Bold;
+src:url(fonts/Arvo-Bold.ttf) format('truetype');
+}
+@font-face{
+font-family:Arvo-Regular;
+src:url(fonts/Arvo-Regular.ttf) format('truetype');
+}
+@font-face{
+font-family:Arvo-RegularItalic;
+src:url(fonts/Arvo-RegularItalic.ttf) format('truetype');
+}
+@font-face{
+font-family:Arvo-BoldItalic;
+src:url(fonts/Arvo-boldItalic.ttf) format('truetype');
+}
+@font-face{
+font-family:Bangers;
+src:url(fonts/Bangers-Regular.ttf) format('truetype');
+}
+@font-face{
+font-family:Caveat-Bold;
+src:url(fonts/Caveat-Bold.ttf) format('truetype');
+}
+@font-face{
+font-family:Caveat-Regular;
+src:url(fonts/Caveat-Regular.ttf) format('truetype');
+}
+@font-face{
+font-family:CaveatBrush-Regular;
+src:url(fonts/CaveatBrush-Regular.ttf) format('truetype');
+}
+@font-face{
+font-family:Arvo-Regular;
+src:url(fonts/Arvo-Regular.ttf) format('truetype');
+}
+@font-face{
+font-family:Arvo-Regular;
+src:url(fonts/Arvo-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:Chilanka;
+	src:url(fonts/Chilanka-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:DancingScript;
+	src:url(fonts/DancingScript-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:GloriaHallelujah;
+	src:url(fonts/GloriaHallelujah-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:GreatVibes;
+	src:url(fonts/GreatVibes-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:IndieFlower;
+	src:url(fonts/IndieFlower-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:LexendDeca;
+	src:url(fonts/LexendDeca-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:Lobster;
+	src:url(fonts/Lobster-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:Oswald;
+	src:url(fonts/Oswald-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:PermanentMarker;
+	src:url(fonts/PermanentMarker-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:Sacramento;
+	src:url(fonts/Sacramento-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:Satisfy;
+	src:url(fonts/Satisfy-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:WorkSans;
+	src:url(fonts/WorkSans-Regular.ttf) format('truetype');
+}
+	
+
+* {
+  box-sizing: border-box;
+}
+	
+html {
+   background-color: #000;
+}
+/* Header styles*/
+header img#banner {
+	height:400px;
+}
+
+
+/* Page Body Styles */
+
+body {
+	width: 85%;
+	margin: auto;
+    background-color: white;
+    font-family: LexendDeca, Oswald, WorkSans, Anton, IndieFlower, Lobster, DancingScript, Satisfy, PermanentMarker, Caveat, GreatVibes, GloriaHallelujah, Sacramento, Bangers, Chilanka;   
+}
+
+/* Image Styles */
+img {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+
+/* Horizontal Navigation List Styles */
+
+
+nav.horizontal a {
+   background-color: black;
+   font-family: Arvo-Bold;
+   font-size: 1em;
+   line-height: 1.8em;
+   text-align: center;
+   font-weight: bold;
+}  
+
+nav.horizontal a:link, 
+nav.horizontal a:visited {
+   background-color: black;
+   color: white;
+   text-decoration:none;
+}
+
+nav.horizontal a:hover, 
+nav.horizontal a:active {
+   background-color: white;
+   color: black;
+   text-decoration:none;
+}   
+
+
+
+/* Horizontal Navigation Styles */
+nav.horizontal li {
+	display: block;
+	float: left;
+	width: 12%;
+	text-decoration:none;
+}
+
+nav a {
+	display: block;
+	height: 40px;
+	margin-bottom: 40px;
+}
+p a {
+	color: black:
+	text-decoration: none;
+}
+
+/* Row Styles */
+div.newRow {
+	clear: both;
+	width: 100%;
+}
+
+div.newRow::after {
+	clear: left;
+	content: "";
+	display: table;
+}
+
+/* Column Styles */
+div[class^="col-"]{
+	padding: 2%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div[class^="col-"] h1 {
+	background-color: black;
+	color: white;
+}
+
+div.col-1-4Left {
+	width: 25%;
+	float:left;
+	font-family: Arvo-Bold;
+}
+
+div.col-1-4Left a{
+	font-family: Arvo-Bold;
+	background-color: black;
+	color: white; 
+	display: block;
+	height: 35px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+div.col-1-4Left a:hover {
+	background-color: white;
+	color: black;
+	outline: black solid 1px;
+	height:35px;
+	padding: 5px;
+	text-decoration:none;
+	}
+div.col-1-1{
+	width: 100%;
+	float: left;
+	font-family: Arvo-Bold;
+}
+
+div.col-1-2{
+	width: 50%;
+	float: left;
+	font-family: Arvo-Bold;
+}
+div.col-1-3{
+	width: 33.33%;
+	float: left;
+	font-family: Arvo-Bold;
+}
+
+
+
+div.col-3-4{
+	width: 75%;
+	float: left;
+	font-family: Arvo-Bold;
+}
+
+div.col-1-2 a{
+	background-color: black;
+	color: white;
+	height:35px;
+	padding: 5px;
+	text-decoration:none;
+}
+
+div.col-1-2 a:hover {
+	background-color: white;
+	color: black;
+	outline: black solid 1px;
+	height:35px;
+	padding: 5px;
+	text-decoration:none;
+}
+
+div.col-1-4Right {
+	width: 25%;
+	float:left;
+	font-family: Arvo-Bold;
+}
+
+div.col-1-4Right a{
+	font-family: Arvo-Bold;
+	background-color: black;
+	color: white; 
+	display: block;
+	height: 35px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+div.col-1-4Right a:hover {
+	background-color: white;
+	color: black;
+	outline: black solid 1px;
+	height:35px;
+	padding: 5px;
+	text-decoration:none;
+}
+
+.newRow .col-1-2 article p {
+	font-weight: bold;
+}
+.newRow .col-1-4Left p {
+	font-weight: bold;
+}
+
+
+footer {
+	clear: both;
+	color: white;
+	background-color: #000;
+	font-size: 0.9em;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+
+/*Gig guide Style Rules*/
+
+
+
+p#siya:hover::after {
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	font-family:GloriaHallelujah;
+	font-weight: bold;
+	border-radius:10px;
+	display:block;
+	color:red;
+	background-color:ivory;
+	border-style:outset;
+	padding: 5%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	content:"So the ANC won the elections, what’s next? A DAMN EPIC CELEBRATION, THAT’S WHAT! Join DJs Tshidye, Konopo, Thido Vocals and many more in helping the ANC celebrate its victory at Georgi’s Lounge. The Date is 12th May and entrance is free...";
+}
+
+p#soul:hover::after {
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	font-family:GloriaHallelujah;
+	font-weight: bold;
+	border-radius:10px;
+	display:block;
+	color:red;
+	background-color:ivory;
+	border-style:outset;
+	padding: 5%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	content:"There is a new soul to Fridays, Certified Soul. Chicken Licken Hotwings just not filling up the soul anymore? Try Capello’s Certified Soul Fridays. The music, the food, the vibe is all the soul needs to be renewed. With some of the best Soul DJs Welkom has to offer, cover is free and the party kicks off at 7PM…";
+}
+
+p#phakisa:hover::after {
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	font-family:GloriaHallelujah;
+	font-weight: bold;
+	border-radius:10px;
+	display:block;
+	color:red;
+	background-color:ivory;
+	border-style:outset;
+	padding: 5%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	content:"Thinking up ways to end your year? Look no further than Beach on the Tracks at the Phakisa race course. Tickets go for R 100 at Computicket, R 120 at the gate or R 500 for the VIP section. Entertainment includes performances by Caspper Nyovest, DJ Black Coffee, DJ Fantas and many more…";
+}
+
+/*Review Heading styles*/
+h3.reviews {
+	font-family:PermanentMarker;
+}
+
+
+/*Slideshow style*/
+
+/*html,body,h1,h2,h3,h4 {font-family:"Arvo-Bold"}*/
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+/*Story paragraph styles*/
+p.story {
+	font-family:WorkSans;
+}
+/*About page headings*/
+
+h2.about{
+	text-align:center;
+}

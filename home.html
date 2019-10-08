@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Students: 219007945 T O Mogorosi, 206064284 AF Nyalela, 219006176 P Gailele-->
+   
+   <meta charset="utf-8" />
+   <meta name="keywords" content="nightlife, welkom, club, adventure, fashion, drinking"/>
+   <title>Up All Night</title>
+   <link rel="icon" type="image/jpg" href="uan.jpg">
+   <link href="slide.css" rel="stylesheet" />
+   <link href="style1.css" rel="stylesheet" />
+</head>
+
+<body>
+   <header>
+      <img id="banner" src="uan.jpg" alt="UP ALL NIGHT" />
+      <nav class="horizontal">
+         <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gig.html">Gig Guide</a></li>
+            <li><a href="adventure.html">Adventure</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="fashion.html">Fashion</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="about.html">About Us</a></li>
+         </ul>
+        <p>&nbsp;</p>
+        <div class="w3-content" style="max-width:100%;margin-top:0px;margin-bottom:0px"><!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="images/slide1.jpg" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/slide2.png" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/slide3.jpg" style="width:100%">
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-large">
+      <div class="w3-left" onclick="plusDivs(-1)"><img src="images/arrowleft.png" width="32" height="32"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><img src="images/arrowright.png" width="32" height="32"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container"></div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="plans"></div>
+
+<!-- Grid --><!-- Contact --></div>
+
+<!-- Footer --><script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+      </nav>
+   </header>
+   <div class="newRow">
+     <div class="col-1-4Left">
+         <h1>Follow Us</h1>     
+       <div class="col-1-2">
+         <p><img src="images/facebook2.png" width="100%"></p>
+         <p><a href="#">Facebook</a></p>
+         </div>
+         <div class="newRow">
+         <div class="col-1-2">
+         <p><img src="images/twitter2.png" width="100%"></p>
+         <p><a href="#">Twitter</a></p>
+         </div>
+       </div>
+       <div class="newRow">
+	   <h1>Adverts</h1>
+       <p><img src="images/advert1.jpg" width="100%" alt="Clientele "></p>
+       <p><a href="#">Clientele Rewards</a></p>
+       <p><img src="images/parkinglot2019Advert.jpg" width="100%" alt="Parking Lot Advert"></p>
+       <p><a href="#">The Parking LOT Part 5</a></p>
+     </div>
+     </div>
+     <div class="col-1-2">
+    <h1>Recent</h1>
+       <div class="newRow">
+         <div class="col-1-2">
+           <p><img src="images/goldenbean1.jpg" alt="" width="1600"></p>
+         </div>
+         <div class="col-1-2">
+           <h4>Golden Bean Awards Still Alive Says Founder</h4>
+           <p class="story">Contrary to popular belief, the Golden Bean Awards (the Beanies)...</p>
+           <p><a href="article1.html">Read More..</a></p>
+         </div>
+         <div class="col-1-2">
+           <p><img src="images/tshidye2.jpg" alt="" width="480"></p>
+         </div>
+         <div class="col-1-2">
+           <h4>DJ Tshidye Nominated For Golden Bean Award</h4>
+           <p class="story">Local house and radio disc jockey, DJ Tshidye, has been nominated for the 2019 Golden Bean awards in the best DJ category...</p>
+           <p><a href="article2.html">Read More..</a></p>
+         </div>
+		 <div class="col-1-2">
+			<h4>Makgolompita EPK</h4>
+			<video width="480" height="240" controls>
+				<source src="video/epk.mp4" type="video/mp4">
+				Please upgrade your browser to view this video
+			</video>
+		</div>	
+         <p>&nbsp;</p>
+         <p>&nbsp;</p>
+       </div>
+     </div>
+<div class="col-1-4Right">
+       <div class="newRow">
+         <h1>Adverts</h1>
+       <p><img src="images/nandos.png" width="1000"></p>
+       <p><a href="#">Nandos</a></p>
+       <p><img src="images/mrprice.jpg" width="700"></p>
+       <p><a href="#">Mr Price</a></p>
+       <p><img src="images/muggandbean.jpg" width="600"></p>
+       <p><a href="#">Mugg &amp; Bean</a></p>
+       <p><img src="images/tops.jpg" width="275" height="183"></p>
+       <p><a href="#">Tops September Special</a></p>
+       <p><img src="images/advertise.png" width="278"></p>
+       <p><a href="#">Advtise Here...</a></p>
+    </div>
+     </div>
+	<div class="newRow"></div>
+	 <div class="newRow"></div>
+	 <div class="newRow"></div>
+   </div>
+   <footer>
+     Up All Night &copy; 2019 All Rights Reserved
+   </footer>
+</body>
+</html>
